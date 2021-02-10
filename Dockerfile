@@ -21,9 +21,9 @@ RUN apt-get update && \
 
 # copy necessary files
 ## app folder
-COPY /shiny_demo_docker ./app
+COPY app.R ./app.R
 ## renv.lock file
-COPY //shiny_demo_docker /renv.lock ./renv.lock
+COPY renv.lock ./renv.lock
 
 # install renv & restore packages
 RUN Rscript -e 'install.packages("renv")'
