@@ -34,4 +34,4 @@ RUN Rscript -e 'renv::restore()'
 EXPOSE 3838
 
 # run app on container start
-CMD ["R", "-e", "shiny::runApp('./', host = '127.0.0.1', port = 3838)"]
+CMD ["R", "-e", "shiny::runApp('./', host = '54.162.208.16', port = 3838)"]
